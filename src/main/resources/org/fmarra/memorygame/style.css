@@ -1,0 +1,20 @@
+/*Background color of the table*/
+.root {
+    -fx-font-size: 20pt;
+    -fx-background-color: #1b8800;
+}
+/*Style of the label*/
+.label {
+    -fx-text-fill: #FFB000;
+    -fx-font-weight: bold;
+}
+/*Style of the button*/
+.button {
+    -fx-background-color: #FFB000;
+    -fx-background-radius: 40px;
+}
+/*Style of the button when is hover*/
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(#d68c45, #f4e285);
+}
