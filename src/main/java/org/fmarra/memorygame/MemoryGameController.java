@@ -2,6 +2,7 @@ package org.fmarra.memorygame;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -123,6 +124,7 @@ public class MemoryGameController implements Initializable {
             imageView.setImage(secondCard.getImage());
             checkMatch();
             updateLabels();
+            gameFinished();
         }
     }
 
@@ -146,4 +148,17 @@ public class MemoryGameController implements Initializable {
         firstCard = null;
         secondCard = null;
     }
+
+    /**
+     * Method that check if all card are matched and the game is finished
+     */
+    private void gameFinished() {
+        if(numMatches == cardsInGame.size() / 2) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("All card matched");
+            alert.setContentText("Congratulation you match all cards");
+            alert.showAndWait();
+        }
+    }
+
 }
