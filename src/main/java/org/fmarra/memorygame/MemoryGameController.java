@@ -155,6 +155,7 @@ public class MemoryGameController implements Initializable {
     private void gameFinished() {
         if(numMatches == cardsInGame.size() / 2) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("All card Matched");
             alert.setHeaderText("All card matched");
             alert.setContentText("Congratulation you match all cards");
             alert.showAndWait();
