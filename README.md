@@ -18,7 +18,7 @@ When you are finished the game, you can close or click the button and play antoh
 * `App.java`: contains the main where to start the application
 * `Card.java`: contains the class that implement a card
 * `Deck.java`: contains the class that implement a deck of cards
-* `Deck.java`: contains the class that implement a memory card
+* `MemoryCard.java`: contains the class that implement a memory card
 * `MemoryGameController.java`: contains the class that implement the logic behind the game
 
 ## Contributing
